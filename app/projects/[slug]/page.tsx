@@ -166,7 +166,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
   return (
     <div className="container mx-auto px-4 py-16">
       <h1 className='text-xl font-semibold'>/<Link className='text-blue-400' href={`/projects`}>projects</Link>/{project.slug}</h1>
-      <div className='flex justify-between items-start p-10'>
+      <div className='flex justify-between items-start sm:flex-col p-10'>
         <h1 className="text-4xl font-bold mb-6">{project.title}</h1>
         <Link
           href={project.liveDemo}
